@@ -18,9 +18,9 @@ class _HomeState extends State<Home> {
 
     // Start a periodic timer to update the displayed time
     timer = Timer.periodic(Duration(seconds: 1), (timer) {
-      setState(() {
+      /*setState(() {
         data['time'] = _getCurrentTime(); // Update time every second
-      });
+      });*/
     });
   }
 
@@ -31,11 +31,11 @@ class _HomeState extends State<Home> {
   }
 
   // Function to get the current time as a formatted string
-  String _getCurrentTime() {
+  /*String _getCurrentTime() {
     final now = DateTime.now();
     final hour = now.hour > 12 ? now.hour - 12 : (now.hour == 0 ? 12 : now.hour); // Convert to 12-hour format
     return "${hour}:${now.minute.toString().padLeft(2, '0')} ${now.hour >= 12 ? 'PM' : 'AM'}";
-  }
+  }*/
 
 
   @override
